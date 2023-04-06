@@ -29,4 +29,4 @@ t.extend(s)
 print(s)
 
 t[1]=0
-print(t) #수정도 아주 잘 된다.
+print(t) #수정

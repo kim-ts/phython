@@ -106,7 +106,7 @@ else:
                     kk = []
                     q = 0
                     for i in range(len(ip)):
-                        print(ip,subnet)
+
                         a = int(ip[i]) + int(subnet[i])
                         if a == 2:
                             kk.append(1)
@@ -166,4 +166,5 @@ for i in range(len(binip)):
     print('%d번째 네트워크 : '%(i+1) + binip[i] + '-->' + dexip[i])
     print('%d번째 브로드캐스트 : '%(i+1) + binbroad[i] + '-->' + dexbroad[i])
     print('subnet mask : ' + subnetmask + '-->' + subnetmaskdex)
-    print('총 ip개수 : %d'%2**(k-n-n))
+    print('총 ip개수 : %d'%2**(8-n))
+    print('할당가능 ip개수 : %d'%(2**(8-n)-2))
